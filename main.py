@@ -116,6 +116,10 @@ class App:
         self.video_canvas = tk.Canvas(self.mainframe, width=320, height=200)
         self.video_canvas.grid(row=8, column=0, columnspan=2, pady=10)
 
+        #user input box
+        self.text_input = ttk.Label(self.mainframe, text="We broke so here ads", background="white", font=("arial black", 20), wraplength=400, justify="left")
+        self.text_input.grid(row=9, column=0, columnspan=2)
+
         #video playback
         self.video_files = ["Videos/ad1.mp4", "Videos/ad2.mp4", "Videos/ad3.mp4", "Videos/ad3.mp4"]  # List of video files
         self.current_video_index = 0
